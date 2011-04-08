@@ -200,7 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$BUILT_PRODUCTS_DIR\"; tar cjf \"$PRODUCT_NAME.app.tar.bz2\" \"$PRODUCT_NAME.app\"; ln -sf \"/Applications\" \"$BUILT_PRODUCTS_DIR\"";
+			shellScript = "ln -sf \"/Applications\" \"$BUILT_PRODUCTS_DIR\"; if [ \"$CONFIGURATION\" = 'Release' ]; then cd \"$SRCROOT\"; hg addremove; hg commit -m \"Initial commit of all changes to the repository.\"; hg push; fi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
