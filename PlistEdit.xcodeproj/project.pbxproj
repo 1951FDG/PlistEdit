@@ -200,7 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ln -sf \"/Applications\" \"$BUILT_PRODUCTS_DIR\"; if [ \"$CONFIGURATION\" = 'Release' ]; then cd \"$SRCROOT\"; hg addremove; hg commit -m \"Initial commit of all changes to the repository.\"; hg push; fi";
+			shellScript = "ln -sf \"/Applications\" \"$BUILT_PRODUCTS_DIR\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
