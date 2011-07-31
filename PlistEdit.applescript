@@ -18,7 +18,7 @@ on launched theObject
 		try
 			reveal result
 			activate
-			open selection using application file id "com.apple.PropertyListEditor"
+			open selection
 		end try
 		get bounds of window of desktop
 	end tell
