@@ -28,6 +28,23 @@
 		C335A13B16C40CE800416302 /* ASChooseApplicationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASChooseApplicationItem.h; sourceTree = "<group>"; };
 		C335A13C16C40CE800416302 /* ASChooseApplicationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASChooseApplicationItem.m; sourceTree = "<group>"; };
 		C335A13F16C40E1B00416302 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907316C41D4C00D3423D /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907416C41D5300D3423D /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Dutch; path = Dutch.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907516C41D5C00D3423D /* fi */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fi; path = fi.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907616C41D6100D3423D /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907716C41D6700D3423D /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907816C41D6E00D3423D /* Italian */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Italian; path = Italian.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907916C41D7200D3423D /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907A16C41D7900D3423D /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907B16C41D7D00D3423D /* no */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = no; path = no.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907C16C41D8500D3423D /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907D16C41D8D00D3423D /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt_PT; path = pt_PT.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907E16C41D9C00D3423D /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = pt.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5907F16C41DA000D3423D /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5908016C41DA700D3423D /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5908116C41DAE00D3423D /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5908216C41DB600D3423D /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = zh_CN; path = zh_CN.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
+		C3B5908316C41DBD00D3423D /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = zh_TW; path = zh_TW.lproj/ChooseApplication.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +170,20 @@
 				Japanese,
 				French,
 				German,
+				da,
+				Dutch,
+				fi,
+				Italian,
+				ko,
+				no,
+				pl,
+				pt_PT,
+				pt,
+				ru,
+				Spanish,
+				sv,
+				zh_CN,
+				zh_TW,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* PlistEdit */;
 			projectDirPath = "";
@@ -192,6 +223,23 @@
 			isa = PBXVariantGroup;
 			children = (
 				C335A13F16C40E1B00416302 /* English */,
+				C3B5907316C41D4C00D3423D /* da */,
+				C3B5907416C41D5300D3423D /* Dutch */,
+				C3B5907516C41D5C00D3423D /* fi */,
+				C3B5907616C41D6100D3423D /* French */,
+				C3B5907716C41D6700D3423D /* German */,
+				C3B5907816C41D6E00D3423D /* Italian */,
+				C3B5907916C41D7200D3423D /* Japanese */,
+				C3B5907A16C41D7900D3423D /* ko */,
+				C3B5907B16C41D7D00D3423D /* no */,
+				C3B5907C16C41D8500D3423D /* pl */,
+				C3B5907D16C41D8D00D3423D /* pt_PT */,
+				C3B5907E16C41D9C00D3423D /* pt */,
+				C3B5907F16C41DA000D3423D /* ru */,
+				C3B5908016C41DA700D3423D /* Spanish */,
+				C3B5908116C41DAE00D3423D /* sv */,
+				C3B5908216C41DB600D3423D /* zh_CN */,
+				C3B5908316C41DBD00D3423D /* zh_TW */,
 			);
 			name = ChooseApplication.xib;
 			sourceTree = "<group>";
