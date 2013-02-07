@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 										arg1.version = @"—";
 									}
 									
-									CFStringRef result = CFURLCopyFileSystemPath(outAppURL, kCFURLPOSIXPathStyle);
+									result = CFURLCopyFileSystemPath(outAppURL, kCFURLPOSIXPathStyle);
 									
 									if (result)
 									{
