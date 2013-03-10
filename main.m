@@ -213,20 +213,19 @@ int main(int argc, char *argv[])
 					NSOpenPanel *openPanel = [[NSOpenPanel alloc] init];
 					[openPanel setTitle:[windowController.window title]];
 					[openPanel setMessage:[windowController.prompt stringValue]];
-					NSArray *allowedFileTypes = [NSArray arrayWithObject:@"com.apple.application-bundle"];
 #if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_6
 					if (floor(kCFCoreFoundationVersionNumber) > 476.00)
 					{
-						[openPanel setAllowedFileTypes:allowedFileTypes];
+						[openPanel setAllowedFileTypes:[NSArray arrayWithObject:@"com.apple.application-bundle"]];
 						
 						runModal = [openPanel runModal];
 					}
 					else
 					{
-						runModal = [openPanel runModalForDirectory:nil file:nil types:allowedFileTypes];
+						runModal = [openPanel runModalForDirectory:nil file:nil types:[NSArray arrayWithObject:@"app"]];
 					}
 #else
-					runModal = [openPanel runModalForDirectory:nil file:nil types:allowedFileTypes];
+					runModal = [openPanel runModalForDirectory:nil file:nil types:[NSArray arrayWithObject:@"app"]];
 #endif
 					if (runModal == NSAlertDefaultReturn)
 					{
