@@ -210,7 +210,7 @@ int main(int argc, char *argv[])
 				}
 				else if (runModal == NSAlertAlternateReturn)
 				{
-					NSOpenPanel *openPanel = [[NSOpenPanel alloc] init];
+					NSOpenPanel *openPanel = [NSOpenPanel openPanel];
 					[openPanel setTitle:[windowController.window title]];
 					[openPanel setMessage:[windowController.prompt stringValue]];
 #if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_6
