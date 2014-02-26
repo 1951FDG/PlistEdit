@@ -8,7 +8,6 @@
 
 #import "ASChooseApplicationItem.h"
 
-
 @implementation ASChooseApplicationItem
 
 @synthesize name;
@@ -24,7 +23,7 @@
 	[kind release];
 	[version release];
 	[path release];
-	
+
 	[super dealloc];
 }
 

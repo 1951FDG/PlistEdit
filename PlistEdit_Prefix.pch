@@ -5,3 +5,7 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
 #endif
+
+#ifndef kCFCoreFoundationVersionNumber10_5
+	#define kCFCoreFoundationVersionNumber10_5 476.00
+#endif

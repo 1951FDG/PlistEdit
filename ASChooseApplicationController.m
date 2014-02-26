@@ -8,7 +8,6 @@
 
 #import "ASChooseApplicationController.h"
 
-
 @implementation ASChooseApplicationController
 
 @synthesize items;
@@ -36,7 +35,19 @@
 
 - (void)awakeFromNib
 {
+#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_6
+	if (floor(kCFCoreFoundationVersionNumber) > kCFCoreFoundationVersionNumber10_5)
+	{
+		[arrayController setSortDescriptors:[NSArray arrayWithObject:[[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)] autorelease]]];
+	}
+	else
+	{
+		[arrayController setSortDescriptors:[NSArray arrayWithObject:[[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)] autorelease]]];
+	}
+
+#else
 	[arrayController setSortDescriptors:[NSArray arrayWithObject:[[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)] autorelease]]];
+#endif
 }
 
 - (void)dealloc
@@ -45,7 +56,7 @@
 	[prompt release];
 	[tableView release];
 	[arrayController release];
-	
+
 	[super dealloc];
 }
 

@@ -8,21 +8,20 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface ASChooseApplicationItem : NSObject
 {
-    NSString *name;
+	NSString *name;
 	NSImage *icon;
 	NSString *kind;
 	NSString *version;
 	NSString *path;
 }
 
-@property(retain) NSString *name;
-@property(retain) NSImage *icon;
-@property(retain) NSString *kind;
-@property(retain) NSString *version;
-@property(retain) NSString *path;
+@property (retain) NSString *name;
+@property (retain) NSImage *icon;
+@property (retain) NSString *kind;
+@property (retain) NSString *version;
+@property (retain) NSString *path;
 - (void)dealloc;
 
 @end

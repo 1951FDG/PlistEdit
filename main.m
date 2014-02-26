@@ -214,7 +214,7 @@ int main(int argc, char *argv[])
 					[openPanel setTitle:[windowController.window title]];
 					[openPanel setMessage:[windowController.prompt stringValue]];
 #if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_6
-					if (floor(kCFCoreFoundationVersionNumber) > 476.00)
+					if (floor(kCFCoreFoundationVersionNumber) > kCFCoreFoundationVersionNumber10_5)
 					{
 						[openPanel setAllowedFileTypes:[NSArray arrayWithObject:@"com.apple.application-bundle"]];
 						
